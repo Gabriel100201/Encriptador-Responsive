@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="llaves.png">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <div class="grid">
+        <header class="grid__header">
+            <h1 class="header__h1">Encriptador</h1>
+        </header>
+        
+        <main class="grid__main">
+            <div class="main__input">
+                <textarea class="input__textarea" placeholder="Ingrese su texto" autofocus onkeypress="Enter(event)"></textarea>
+                <div class="input__botones">
+                    <button class="botones__botonEn" onclick="botonEncriptar()">Encriptar</button>
+                    <button class="botones__botonDes" onclick="botonDesencriptar()">Desencriptar</button>
+                </div>
+            </div>
+            <div class="main__output">
+                <textarea class="output__textarea" placeholder="Resultado:" disabled></textarea>
+                <button class="output__botonCop" onclick="copiar()">Copiar</button>
+            </div>
+        </main>
+
+        <footer class="grid__footer">
+            <div class="footer__container">
+                <a target="_blank" href="https://github.com/Gabriel100201"><i class='bx bxl-github'></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/gabriel-funes-ab8a0a24a/"><i class='bx bxl-linkedin-square'></i></a>
+                <p class="footer__desarrollo">Desarrollado por Gabriel Funes</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
